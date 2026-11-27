@@ -71,6 +71,14 @@ pip install -r requirements.txt
 - [ ] Week 3: Churn prediction
 - [ ] Week 4: Dashboard and report
 
+
+## Data Quality Findings (Week 1)
+
+- Total rows loaded into PostgreSQL: 1,067,371
+- Rows with no customer_id: 243,007 (22.77% of rows, 15.40% of revenue). Kept and flagged; excluded only from customer-level RFM.
+- Cancelled orders: 19,494
+- Rows with quantity <= 0, price <= 0 or cancelled: 25,701 (2.41%). Dropped for sales analysis, within the 5% limit.
+
 ## Author
 
 Devarakonda Sony, Data Analyst Intern, Axlero Solutions
